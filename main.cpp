@@ -1,12 +1,12 @@
 #include <iostream>
 
 int main() {
-  std::cout << "runtime initialization \n";
+  std::cout << "runtime initialization for 1D in array \n";
 
   int i, n, a[10];
   std::cout << "enter the number of elements \n";
   std::cin >> n;
-  std::cout << "enter the  elements to the array \n";
+  std::cout << "enter the  elements to the 1D array \n";
   for( i=0; i<n; i++){
     
     std::cin >> a[i];
@@ -15,5 +15,20 @@ int main() {
   for(i=0;i<n;i++){
    std::cout << a[i];
     std::cout<< " \n";
+
+
+    int m,j,k,b[3][3];
+    std::cout << "runtime initialization for 2D in array \n";
+    std::cout << "enter the number of elements \n";
+  std::cin >> m;
+   std::cout << "enter the  elements to the 2D array \n"; 
+    for(j=0;j<m;j++)
+      {
+      for(k=0;k<m;k++){
+        std::cin>>b[j][k];
+      }
+        }
+
+    
   }
 }
